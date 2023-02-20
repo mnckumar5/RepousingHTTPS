@@ -1,0 +1,32 @@
+package Assigment12th;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import Helper.Utility;
+
+public class Question1 {
+
+	
+	@Parameters("Browser")
+	@Test
+	public void login(String browserName)
+	{
+			
+		{
+		
+			WebDriver driver=Utility.startBrowser(browserName, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+				
+			String url=driver.getCurrentUrl();
+			Assert.assertTrue(url.contains("orangehrmlive"),"Wrong URL");
+			driver.quit();
+			
+			String title=driver.getTitle();
+			Assert.assertTrue(title.contains("HRM"),"Wrong title");
+		}
+		
+	}
+}

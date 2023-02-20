@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Assigment12paralleltestnSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="Firefoxtest(failed)">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="Assigment12th.Question3">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Assigment12th.Question3 -->
+    </classes>
+  </test> <!-- Firefoxtest(failed) -->
+</suite> <!-- Failed suite [Assigment12paralleltestnSuite] -->

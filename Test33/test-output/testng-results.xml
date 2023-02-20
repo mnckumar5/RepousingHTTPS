@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Sorry chrome not supported Running test in default browser]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-02-09T16:52:59 IST" name="Default suite" finished-at="2023-02-09T16:53:14 IST" duration-ms="15019">
+    <groups>
+    </groups>
+    <test started-at="2023-02-09T16:52:59 IST" name="Default test" finished-at="2023-02-09T16:53:14 IST" duration-ms="15019">
+      <class name="Jan_29ExtentReports.Logintestusingpom">
+        <test-method is-config="true" signature="Setupapplication()[pri:0, instance:Jan_29ExtentReports.Logintestusingpom@61001b64]" started-at="2023-02-09T16:52:59 IST" name="Setupapplication" finished-at="2023-02-09T16:53:10 IST" duration-ms="11055" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Sorry chrome not supported Running test in default browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setupapplication -->
+        <test-method signature="login()[pri:0, instance:Jan_29ExtentReports.Logintestusingpom@61001b64]" started-at="2023-02-09T16:53:10 IST" name="login" finished-at="2023-02-09T16:53:13 IST" duration-ms="2846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Jan_29ExtentReports.Logintestusingpom@61001b64]" started-at="2023-02-09T16:53:13 IST" name="teardown" finished-at="2023-02-09T16:53:14 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Jan_29ExtentReports.Logintestusingpom -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

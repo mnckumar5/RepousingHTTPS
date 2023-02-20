@@ -1,0 +1,59 @@
+package Jan22ndScripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import Helper.Utility;
+
+public class DDTtest2 
+
+{
+	@Test(dataProvider="logindata")
+	public void test1(String UN,String PWD)
+	{
+		
+		WebDriver driver=Utility.startBrowser("Chrome", "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys(UN);
+		
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(PWD);
+		
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
+		
+	}
+		
+		@DataProvider(name="logindata")
+		public Object[][] getdata()
+		{
+			Object[][] arr=new Object[5][2];
+			
+			arr[0][0]="Admin4";
+			arr[0][1]="admin123";
+			
+			arr[1][0]="Admin4";
+			arr[1][1]="admin123345";
+			
+			arr[2][0]="Admin2";
+			arr[2][1]="admin123";
+			
+			arr[2][0]="Admin";
+			arr[2][1]="admin123d";
+			
+			arr[2][0]="Admin";
+			arr[2][1]="admin123";
+			
+			
+			
+			return  arr;
+			
+			
+		}
+	
+
+}

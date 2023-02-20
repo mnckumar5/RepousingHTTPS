@@ -1,0 +1,53 @@
+package Assigment12th;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import Helper.Utility;
+public class Question3 
+
+{
+//@Parameters("Browser")
+@Test
+public void login(String browserName)
+{
+		
+	{
+	
+		WebDriver driver=Utility.startBrowser(browserName, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+			Utility.waitforseconds(9);	
+			WebElement Linkedin=driver.findElement(By.xpath("(//a)[1]"));
+			
+			String text=driver.getTitle();
+			Assert.assertTrue(text.contains("linkedin"),"Wrong text");
+			
+			
+	        WebElement Facebook=driver.findElement(By.xpath("(//a)[2]"));
+	        String text1=driver.getTitle();
+			Assert.assertTrue(text1.contains("facebook"),"Wrong text");
+			
+			
+	        WebElement Twitter=driver.findElement(By.xpath("(//a)[3]"));
+	        String text3=driver.getTitle();
+			Assert.assertTrue(text3.contains("twitter"),"Wrong text");
+			
+			
+			
+			 WebElement Youtube=driver.findElement(By.xpath("(//a)[4]"));
+			 String text4=driver.getTitle();
+				Assert.assertTrue(text4.contains("youtube"),"Wrong text");
+				
+							
+				driver.quit();
+		}
+
+	}
+
+
+	}
+
+

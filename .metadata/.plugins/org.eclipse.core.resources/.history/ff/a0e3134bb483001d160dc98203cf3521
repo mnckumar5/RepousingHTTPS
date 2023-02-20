@@ -1,0 +1,36 @@
+package Assignment5;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Question5 {
+
+	public static void main(String[] args) throws InterruptedException 
+	
+	{
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+		Thread.sleep(4000);
+		
+		WebElement Linkedin=driver.findElement(By.xpath("//a"));
+		String text=Linkedin.getAttribute("href");
+		System.out.println(text);
+		//for (WebElement var:Linkedin)
+		//{
+			
+		//}
+		
+		//for (int i=0;i<5;i++)
+		//{
+			//WebElement Linkedin=driver.findElement(By.xpath("(//a)[1]"));
+			//String text=Linkedin.getAttribute("href");
+			//System.out.println("Linkedin URL :"+text);
+		}
+
+	}
+
+

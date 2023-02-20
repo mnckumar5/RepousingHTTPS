@@ -1,0 +1,39 @@
+package Assignment5;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test13 {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
+		
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin123");
+		
+		Boolean button=driver.findElement(By.xpath("//button[@type='submit']")).isEnabled();
+		
+		System.out.println(button);
+		
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+		
+		Thread.sleep(2000);
+
+		List<WebElement> allValues = driver.findElements(By.xpath("//nav[@role='navigation']"));
+		
+		System.out.println(allValues);
+	}
+
+}

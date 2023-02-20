@@ -1,0 +1,48 @@
+package Assigment12th;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import Helper.Utility;
+
+public class Question4 
+{
+@Parameters("Browser")
+@Test
+public void login(String browserName)
+{
+		
+	{
+		
+		WebDriver driver=Utility.startBrowser(browserName, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+			
+			Utility.waitforseconds(5);	
+			
+			
+	        WebElement Facebook=driver.findElement(By.xpath("(//a)[2]"));
+	        
+	        String text1=Facebook.getAttribute("href");
+	        //System.out.println("Facebook URL :"+text1);
+	        Reporter.log(text1,true);	
+			
+		
+			
+	        WebElement Twitter=driver.findElement(By.xpath("(//a)[3]"));
+	        
+	        String text2=Twitter.getAttribute("href");
+	       // System.out.println("Twitter URL :"+text2);
+	        Reporter.log(text2,true);	
+				
+				
+				driver.quit();
+		}
+
+	}
+	}
+
+

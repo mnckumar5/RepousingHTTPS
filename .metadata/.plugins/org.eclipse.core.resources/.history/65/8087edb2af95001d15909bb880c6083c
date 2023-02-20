@@ -1,0 +1,15 @@
+package Jan14th;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class proxy22 {
+
+	public static void main(String[] args) 
+	
+	{
+		ChromeOptions opt=new ChromeOptions();
+		
+		proxy pro=new proxy();
+	}
+
+}

@@ -1,0 +1,30 @@
+package TestNG;
+
+import static org.testng.Assert.assertEquals;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class AssertDEmo 
+
+{
+	@Test
+  public void test1()
+  {
+	  Assert.assertEquals(12, 12,"Mismatch is there in test1");	  
+	    
+  }
+	@Test
+	public void test2()
+	{
+		Assert.assertEquals(22, 22, "Mismatch is there in test2");
+	}
+	
+	@Test
+	public void test3()
+	{
+		Assert.assertEquals("Selenium for", "Selenium for");
+	}
+	
+	
+}

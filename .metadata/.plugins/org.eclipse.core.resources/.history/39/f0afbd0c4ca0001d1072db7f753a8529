@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+    
+  <test name="Edgetest1">
+  <parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+     <class name="Assigment12th.question2"/>
+     </classes>
+  </test> 
+  
+  <test name="Chrometest2">
+  <parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+     <class name="Assigment12th.Question3"/>
+    </classes>
+  </test> 
+  
+   <test name="Edgetest2">
+  <parameter name="Browser" value="Edge"></parameter>
+    <classes>
+     <class name="Assigment12th.question4"/>
+     </classes>
+  </test> 
+</suite> 

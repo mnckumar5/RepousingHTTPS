@@ -1,0 +1,17 @@
+package TestNG;
+
+import static org.testng.Assert.assertEquals;
+
+public class AssertDEmo 
+
+{
+  public void test1()
+  {
+	  assertEquals(12, 12);
+	  
+	    
+  }
+	
+	
+	
+}

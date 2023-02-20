@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 0 elements to &apos;Test33/src/test/java/Jan22ndScripts&apos;&#x0D;&#x0A;- Destination element: &apos;Test33/src/test/java/Jan22ndScripts&apos;" description="Copy compilation units" destination="=Test33/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;Jan22ndScripts" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1675386489606" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,58 @@
+package Popup;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class fourlinkswitching {
+
+	public static void main(String[] args) throws InterruptedException
+	
+	{
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://ineuron-courses.vercel.app/login");
+		
+		String Pwin=driver.getWindowHandle();
+		
+		System.out.println(Pwin);
+		
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("(//img)[1]")).click();
+		
+		driver.findElement(By.xpath("(//img)[2]")).click();
+		
+		driver.findElement(By.xpath("(//img)[3]")).click();
+		
+		driver.findElement(By.xpath("(//img)[4]")).click();
+		
+		Set<String> groupwin=driver.getWindowHandles();
+		
+		System.out.println(groupwin);
+		
+		
+		
+		for(String mywindows:groupwin)
+		{
+			 String myTitle = driver.switchTo().window(mywindows).getTitle();
+			 System.out.println(myTitle);
+						 
+			 if(myTitle.contains("/ Twitter"))
+					 {
+				       driver.switchTo().window(myTitle);
+				       Thread.sleep(5000);
+				       System.out.println(driver.getTitle());
+				       System.out.println(driver.getCurrentUrl());
+				       break;
+					 }
+			 
+		}
+		driver.quit();
+	}
+	
+
+}

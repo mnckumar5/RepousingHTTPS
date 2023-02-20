@@ -1,0 +1,30 @@
+package Popup;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Anotherwindow9 {
+
+	public static void main(String[] args) 
+	
+	{
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://ineuron-courses.vercel.app/login");
+		
+		driver.manage().window().maximize();
+		
+		String Phan=driver.getWindowHandle();
+		
+		System.out.println(Phan);
+		
+        driver.findElement(By.xpath("(//img)[3]"));
+		
+		driver.findElement(By.xpath("(//img)[2]"));
+		
+		
+
+	}
+
+}

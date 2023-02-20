@@ -1,0 +1,50 @@
+package Popup;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WindowHandles2 {
+
+	public static void main(String[] args) throws InterruptedException 
+	
+	{
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://ineuron-courses.vercel.app/login");
+		
+		driver.manage().window().maximize();
+		
+		String PW=driver.getWindowHandle();
+		
+		System.out.println(PW);
+		
+		
+		driver.findElement(By.xpath("(//img)[2]")).click();
+		
+		driver.findElement(By.xpath("(//img)[3]")).click();
+		
+		Thread.sleep(3000);
+		
+		Set<String> Var3=driver.getWindowHandles();
+		
+		List<String> aftcon=new ArrayList<String>(Var3);
+		
+		System.out.println(aftcon.get(0));
+		
+		System.out.println(aftcon.get(1));
+		
+		System.out.println(aftcon.get(2));
+		
+		driver.quit();
+		
+		
+
+	}
+
+}

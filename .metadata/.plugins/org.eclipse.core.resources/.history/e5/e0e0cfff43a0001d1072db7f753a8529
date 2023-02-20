@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Assignment12Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Assignment121Test(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Assigment12th.Question4">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Assigment12th.Question4 -->
+    </classes>
+  </test> <!-- Assignment121Test(failed) -->
+  <test thread-count="3" parallel="tests" name="Assignment123Test(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Assigment12th.Question3">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Assigment12th.Question3 -->
+    </classes>
+  </test> <!-- Assignment123Test(failed) -->
+  <test thread-count="3" parallel="tests" name="Assignment122Test(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Assigment12th.question2">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Assigment12th.question2 -->
+    </classes>
+  </test> <!-- Assignment122Test(failed) -->
+</suite> <!-- Failed suite [Assignment12Suite] -->

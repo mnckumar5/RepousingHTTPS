@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\W8.1\Desktop\28th Jan full excel very difficult---\28th Jan WebAuto(28 Jan Code File-20230128T104944Z-001)\28 Jan Code File\SeleniumWebDriver"/>
+			<item value="C:\Users\W8.1\Desktop\8th Jan Live Class---JavaScriptExecutorandactionclass\8th Jan Web auto-20230109T011048Z-001\8th Jan Web auto\8_jan_code\SeleniumWebDriver"/>
+			<item value="C:\Users\W8.1\Desktop\7th Jan Live Class WebDriverWait , FluentWait ,Screenshots ,Custom Utlity In Selenium\7_Jan_Code_Files"/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1671900167138"/>
+	</section>
+</section>

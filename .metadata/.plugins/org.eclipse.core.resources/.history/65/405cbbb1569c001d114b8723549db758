@@ -1,0 +1,30 @@
+package TestNG;
+
+import org.testng.annotations.Test;
+
+public class Mysecondtestng 
+
+{
+	@Test
+	public void login()
+	{
+		System.out.println("logged in Successfully");
+	}
+	@Test
+	public void Createaccount()
+	{
+		System.out.println("Created account Successfully");
+	}
+	@Test
+	public void Payment()
+	{
+		System.out.println("Payment done Successfully");
+	}
+	@Test
+	public void logout()
+	{
+		System.out.println("Logged out  Successfully");
+	}
+	
+
+}

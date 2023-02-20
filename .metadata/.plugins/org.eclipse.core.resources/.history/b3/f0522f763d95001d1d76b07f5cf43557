@@ -1,0 +1,12 @@
+package Jan14th;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Headless1 
+
+{
+	ChromeOptions opt=new ChromeOptions();
+	
+	opt.
+
+}
